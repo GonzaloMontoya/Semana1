@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayudar a un peludo</title>
     <style>  
+    img{
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
     h1{
         color: whitesmoke;
         font-family: sans-serif;
@@ -16,15 +20,108 @@
         font-family: sans-serif;
         text-align: center;
     }    
+    *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: sans-serif;
+        }
+        nav{
+            background: rgb(40, 40, 40);
+            height: 50px;
+            width: 100%;
+        }
+        label.logo{
+            color: whitesmoke;
+            font-size: 20px;
+            font-family: sans-serif;
+            line-height: 50px;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 50px;
+
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color: whitesmoke;
+            font-size: 17;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: gray;
+            transition:  .3s;
+        }
+        footer{
+            background: rgb(40, 40, 40);
+            height: 170px;
+            width: 100%; 
+            font-weight: bold;
+        }
+        footer ul{
+            font-size: 17;
+            padding:5px 0px ;
+            line-height: 50px;
+            border-radius: 100px;
+            
+        }
+        footer ul li{
+            font-size: x-small;
+        }
     </style>
+
 </head>
 <body bgcolor="#484849">
-    <h1 style="text-align: center;"> ¿Quién es Apolión?</h1>
-    <hr>
+    <nav>
+        <label class="logo">Ayuda a un peludo</label>
+        <ul>
+            <li>
+                <li><a href="indice.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a class = "active" href="gatos.html">Gatos</a></li>
+                <li><a href="perros.html">Perros</a></li>
+                <li><a href="#contactos">Contáctanos</a></li>
+            </li>
+        </ul>
+
+
+    </nav>
+    <br><br><br><br><br><br>
+    <h1>¡Felinos a los que puedes ayudar!</h1>
     <br>
-    <p>Apolión fue rescatado ...</p>
-    <img src="img-ayudaaunpeludo/apolion.png" alt="">
-    
-    <p style="text-align: center; color: whitesmoke; font-family: sans-serif;">Apolión fue rescatado...</p>
+    <hr>
+    <br><br><br>
+    <img src="/img-ayudaaunpeludo/gato2.png" width="600" height="315">
+    <img src="/img-ayudaaunpeludo/gato3.jpg" width="600" height="315">
+    <img src="/img-ayudaaunpeludo/gato4.jpg" width="600" height="315">
+
+    <a target="_blank"
+    href="/apolion.html">
+    <img src="/img-ayudaaunpeludo/apolion.png" width="600" height="315"
+    alt="Apolión"/></a>
+    <br>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <ul>
+            <p>Autor: Gonzalo Montoya</p>
+            <p><a href="mailto:hege@example.com">go.montoya@duocuc.cl</a></p>
+            <li><p style="font-size: 10;">© 2022 Gonzalo montoya, Todos los derechos reservados.</p></li>
+        </ul>
+    </footer>
 </body>
 </html>
